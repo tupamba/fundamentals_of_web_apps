@@ -1,0 +1,14 @@
+note over browser:
+browser in load fetch the form-element from the page, 
+and to register an event handler to handle the form submit event
+end note
+note over browser:
+browser submit calls the method e.preventDefault()
+notes.push(note)
+that renders notes to display
+end note
+browser->server: HTTP post https://fullstack-exampleapp.herokuapp.com/new_note_spa
+server-->browser: { content: "...", date: "2019-05-23" }
+note over browser:
+browser executes the event handler
+end note
